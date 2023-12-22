@@ -42,7 +42,7 @@ export function Input(props: InputProps ) {
         />
 
         {rightNode && (
-          <button className="bg-inherit outline-none ring-0 hover:outline-none hover:ring-0 hover:border-0 focus:outline-none focus:ring-0 focus:border-0" onClick={rightNodeClick}>{rightNode}</button>
+          <button type="button" className="bg-inherit outline-none ring-0 hover:outline-none hover:ring-0 hover:border-0 focus:outline-none focus:ring-0 focus:border-0" onClick={rightNodeClick}>{rightNode}</button>
         )}
       </div>
 
