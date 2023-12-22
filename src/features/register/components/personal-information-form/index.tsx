@@ -1,4 +1,4 @@
-import { Input } from "components";
+import { Input } from "components/base";
 
 export function PersonalInformationForm() {
   return (

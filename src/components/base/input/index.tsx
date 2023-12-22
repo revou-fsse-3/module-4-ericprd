@@ -12,6 +12,8 @@ export function Input(props: InputProps ) {
     rules,
     name,
     containerClassName,
+    rightNode,
+    rightNodeClick,
     ...rest
   } = props;
 
@@ -38,6 +40,10 @@ export function Input(props: InputProps ) {
           {...register(name, rules)}
           {...rest}
         />
+
+        {rightNode && (
+          <button className="bg-inherit outline-none ring-0 hover:outline-none hover:ring-0 hover:border-0 focus:outline-none focus:ring-0 focus:border-0" onClick={rightNodeClick}>{rightNode}</button>
+        )}
       </div>
 
       {error && (
