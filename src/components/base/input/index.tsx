@@ -34,7 +34,7 @@ export function Input(props: InputProps ) {
 
       <div className={twMerge('flex border border-slate-400', error && 'border-[#DF0000]', containerClassName)}>
         <input
-          className="w-full p-2 outline-none ring-0 focus:ring-0 focus:outline-none"
+          className="w-full bg-inherit p-2 outline-none ring-0 focus:ring-0 focus:outline-none"
           id={id ?? generateId}
           type={type}
           {...register(name, rules)}
