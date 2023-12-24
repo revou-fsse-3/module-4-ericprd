@@ -8,7 +8,7 @@ export function Button(props: ButtonProps) {
 
   return (
   <button
-    className={twMerge('border-none w-full', !disabled && 'hover:brightness-110', className)}
+    className={twMerge('border-none w-full py-2 px-4 rounded-md text-gray-600', !disabled && 'hover:brightness-110', className)}
     disabled={disabled}
     {...rest}
   >

@@ -27,14 +27,14 @@ export function Input(props: InputProps ) {
     <div>
       {label && (
         <label htmlFor={id ?? generateId} className="font-semibold text-lg text-gray-500">
-          {label}
-          {isRequired && <sup className="text-red-500">*</sup>}
+          <span>{label}</span>
+          {isRequired && <sup className="text-[#DF0000]">*</sup>}
         </label>
       )}
 
       <div className={twMerge('flex border border-slate-400', error && 'border-[#DF0000]', containerClassName)}>
         <input
-          className="w-full bg-inherit p-2 outline-none ring-0 focus:ring-0 focus:outline-none"
+          className={twMerge('w-full bg-inherit p-2 outline-none ring-0 focus:ring-0 focus:outline-none', error && 'text-[#DF0000] italic')}
           id={id ?? generateId}
           type={type}
           {...register(name, rules)}
