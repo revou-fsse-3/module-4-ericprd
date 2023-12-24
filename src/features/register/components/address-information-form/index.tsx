@@ -32,6 +32,8 @@ export function AddressInformationForm() {
         label="Zip Code"
         placeholder="Zip Code"
         containerClassName='border-0 border-b'
+        inputMode="numeric"
+        pattern="[0-9]*"
         isRequired={true}
       />
     </>
