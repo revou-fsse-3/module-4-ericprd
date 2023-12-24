@@ -29,14 +29,16 @@ export function FormWrapper() {
 
   return (
     <FormProvider {...formMethods}>
-      <form onSubmit={handleSubmit(submitHandler)}>
-        <p className='text-center mb-10 text-3xl font-bold'>Register</p>
+      <form className="space-y-12" onSubmit={handleSubmit(submitHandler)}>
+        <p className='text-center text-3xl font-bold'>Register</p>
 
-        <div className='space-y-5 mb-10'>
-          <StepPage />
+        <div className="flex flex-col justify-between min-h-[30rem]">
+          <div className='space-y-5'>
+            <StepPage />
+          </div>
+
+          <ActionButtonRegister />
         </div>
-
-        <ActionButtonRegister />
       </form>
     </FormProvider>
   );
